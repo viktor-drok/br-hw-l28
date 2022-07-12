@@ -10,6 +10,10 @@ function greeting() {
     document.getElementById("user-name").innerHTML = "Привіт, " + user;
 };
 
+
+
+
+
 document.querySelector(".age-btn").onclick =
     function() { age()
 };
@@ -19,6 +23,9 @@ function age() {
     const birthYear = document.querySelector('#age').value;
     document.querySelector('.user-age').innerHTML = `Вік - ${currentYear - birthYear} роки`;
 };
+
+
+
 
 document.querySelector('.square-btn').onclick =
     function () { square(); };
@@ -30,6 +37,8 @@ function square() {
     document.querySelector('.square-area').innerHTML = 'Площа квадрату ' + 
         side ** 2;
 }
+
+
 
 document.querySelector('.radius-btn').onclick =
     function () { squareCircle(); };
@@ -44,4 +53,19 @@ function squareCircle() {
         2 * pI * radius;
     document.querySelector('.circle-square').innerHTML = 'Площа круга ' + 
     pI * (radius ** 2);
+}
+
+
+document.querySelector('.speed-btn').onclick =
+    function () { speed() };
+
+function speed() {
+    // Швидкість  V = s / t
+    let distance;
+    let time;
+    distance = document.querySelector('#distance').value;
+    time = document.querySelector('#time').value;
+
+    document.querySelector('.speed').innerHTML = 'Розрахункова швидкість ' + 
+        distance / time;
 }
