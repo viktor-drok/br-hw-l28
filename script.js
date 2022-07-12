@@ -16,6 +16,16 @@ document.querySelector(".age-btn").onclick =
 
 function age() {
     const currentYear = 2022;
-    const birthYear = document.querySelector('.age').value;
+    const birthYear = document.querySelector('#age').value;
     document.querySelector('.user-age').innerHTML = `Вік - ${currentYear - birthYear} роки`;
+};
+
+document.querySelector('.square-btn').onclick =
+    function () { square(); };
+
+function square() {
+    let side;
+    side = document.querySelector('#square-side').value;
+    document.querySelector('.square-area').innerHTML =
+        side ** 2;
 }
