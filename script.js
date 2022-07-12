@@ -66,6 +66,5 @@ function speed() {
     distance = document.querySelector('#distance').value;
     time = document.querySelector('#time').value;
 
-    document.querySelector('.speed').innerHTML = 'Розрахункова швидкість ' + 
-        distance / time;
+    document.querySelector('.speed').innerHTML = `Розрахункова швидкість ${distance / time} Км/год`;
 }
