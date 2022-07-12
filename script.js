@@ -26,6 +26,19 @@ document.querySelector('.square-btn').onclick =
 function square() {
     let side;
     side = document.querySelector('#square-side').value;
-    document.querySelector('.square-area').innerHTML =
+    document.querySelector('.square-area').innerHTML = 'Площа квадрату ' + 
         side ** 2;
+}
+
+document.querySelector('.radius-btn').onclick =
+    function () { squareCircle(); };
+
+function squareCircle() {
+    const pI = 3.14;
+    let radius;
+    radius = document.querySelector('#radius').value;
+    document.querySelector('.circle-length').innerHTML ='Довжина круга ' +
+        2 * pI * radius;
+    document.querySelector('.circle-square').innerHTML = 'Площа круга ' + 
+    pI * (radius ** 2);
 }
