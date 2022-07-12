@@ -11,9 +11,8 @@ function greeting() {
 };
 
 document.querySelector(".age-btn").onclick =
-    () => {
-        age();
-    };
+    function() { age()
+};
 
 function age() {
     const currentYear = 2022;
