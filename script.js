@@ -24,6 +24,7 @@ document.querySelector('.square-btn').onclick =
     function () { square(); };
 
 function square() {
+    // Площа квадрату  S = a^2
     let side;
     side = document.querySelector('#square-side').value;
     document.querySelector('.square-area').innerHTML = 'Площа квадрату ' + 
@@ -34,6 +35,8 @@ document.querySelector('.radius-btn').onclick =
     function () { squareCircle(); };
 
 function squareCircle() {
+    // Площа круга S = Pi*r^2
+    // Довжина круга C = 2*Pi*r
     const pI = 3.14;
     let radius;
     radius = document.querySelector('#radius').value;
